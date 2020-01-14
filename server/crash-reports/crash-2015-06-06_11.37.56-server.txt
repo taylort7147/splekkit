@@ -1,0 +1,114 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 6/6/15 11:37 AM
+Description: Exception in server tick loop
+
+Duplicate Mods:
+	ComputerCraft : C:\Documents and Settings\Taylor\Desktop\SplekkitServer\mods\ComputerCraft1.73
+	ComputerCraft : C:\Documents and Settings\Taylor\Desktop\SplekkitServer\mods\ComputerCraft1.73.jar
+
+cpw.mods.fml.common.DuplicateModsFoundException
+	at cpw.mods.fml.common.Loader.identifyDuplicates(Loader.java:386)
+	at cpw.mods.fml.common.Loader.identifyMods(Loader.java:348)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:468)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:87)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:318)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:176)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:620)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows XP (x86) version 5.1
+	Java Version: 1.7.0_45, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 265767376 bytes (253 MB) / 519110656 bytes (495 MB) up to 1520435200 bytes (1450 MB)
+	JVM Flags: 2 total; -Xmx1500m -Xms512m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.114.1388 Minecraft Forge 10.13.3.1388 76 mods loaded, 0 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	FML{7.10.114.1388} [Forge Mod Loader] (Splekkit.jar) 
+	Forge{10.13.3.1388} [Minecraft Forge] (Splekkit.jar) 
+	CodeChickenCore{1.0.4.35} [CodeChicken Core] (minecraft.jar) 
+	MobiusCore{1.2.5} [MobiusCore] (minecraft.jar) 
+	NotEnoughItems{1.0.4.95} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.4.95-universal.jar) 
+	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	additionalpipes{4.3.1} [Additional Pipes] (additionalpipes-4.3.1.jar) 
+	AdvancedRepulsionSystems{59.0.2} [Advanced Repulsion Systems] (adv-repulsion-systems-59.0.2.jar) 
+	AdvancedMachines{59.0.2} [Advanced Machines] (advanced-machines-59.0.2.jar) 
+	Botany{2.0-pre8} [Botany] (binnie-mods-2.0-pre8.jar) 
+	BinnieCore{2.0-pre8} [Binnie Core] (binnie-mods-2.0-pre8.jar) 
+	ExtraBees{2.0-pre8} [Extra Bees] (binnie-mods-2.0-pre8.jar) 
+	ExtraTrees{2.0-pre8} [Extra Trees] (binnie-mods-2.0-pre8.jar) 
+	Genetics{2.0-pre8} [Genetics] (binnie-mods-2.0-pre8.jar) 
+	bluepower{0.2.938} [Blue Power] (BluePower-1.7.10-0.2.938-universal.jar) 
+	BuildCraft|Builders{6.4.16} [BC Builders] (buildcraft-6.4.16.jar) 
+	BuildCraft|Energy{6.4.16} [BC Energy] (buildcraft-6.4.16.jar) 
+	BuildCraft|Factory{6.4.16} [BC Factory] (buildcraft-6.4.16.jar) 
+	BuildCraft|Silicon{6.4.16} [BC Silicon] (buildcraft-6.4.16.jar) 
+	BuildCraft|Core{6.4.16} [BuildCraft] (buildcraft-6.4.16.jar) 
+	BuildCraft|Transport{6.4.16} [BC Transport] (buildcraft-6.4.16.jar) 
+	BuildCraft|Compat{6.4.0} [BuildCraft Compat] (buildcraft-compat-6.4.2.jar) 
+	CoFHCore{1.7.10R3.0.2} [CoFH Core] (CoFHCore-[1.7.10]3.0.2-262.jar) 
+	CompactSolars{4.4.39.315} [Compact Solar Arrays] (CompactSolars-1.7.10-4.4.39.315-universal.jar) 
+	ComputerCraft{1.73} [ComputerCraft] (ComputerCraft1.73) 
+	ComputerCraft{1.73} [ComputerCraft] (ComputerCraft1.73.jar) 
+	DimensionalAnchors{59.0.2} [Dimensional Anchors] (dimensional-anchor-59.0.2.jar) 
+	EasyCrafting{1.7.10-2.0.1.16} [Easy Crafting] (EasyCrafting-1.7.10-2.0.1.16.jar) 
+	Forestry{3.5.4.13} [Forestry for Minecraft] (forestry_1.7.10-3.5.4.13.jar) 
+	funkylocomotion{1.0} [Funky Locomotion] (funky-locomotion-1.7.10-beta-5a.jar) 
+	IC2NuclearControl{2.2.1a-Yolo} [Nuclear Control 2] (IC2NuclearControl-2.2.1a-Yolo.jar) 
+	ImmibisCore{59.1.1} [Immibis Core] (immibis-core-59.1.1.jar) 
+	ImmibisPeripherals{59.0.2} [Immibis's Peripherals] (immibis-peripherals-59.0.2.jar) 
+	IC2{2.2.695-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.695-experimental.jar) 
+	inventorytweaks{1.59-dev-152-cf6e263} [Inventory Tweaks] (InventoryTweaks-1.59-dev-152.jar) 
+	IronChest{6.0.62.742} [Iron Chest] (ironchest-1.7.10-6.0.62.742-universal.jar) 
+	LogisticsPipes{0.8.3.106} [Logistics Pipes] (logisticspipes-0.8.3.106.jar) 
+	MineTweaker3{3.0.9B} [MineTweaker 3] (MineTweaker3-1.7.10-3.0.9C.jar) 
+	modtweaker2{0.7} [Mod Tweaker 2] (ModTweaker 2-0.7.5.jar) 
+	NEIAddons{1.12.5.17} [NEI Addons] (neiaddons-mc1710-1.12.5.17.jar) 
+	NEIAddons|Botany{1.12.5.17} [NEI Addons: Botany] (neiaddons-mc1710-1.12.5.17.jar) 
+	NEIAddons|Forestry{1.12.5.17} [NEI Addons: Forestry] (neiaddons-mc1710-1.12.5.17.jar) 
+	NEIAddons|CraftingTables{1.12.5.17} [NEI Addons: Crafting Tables] (neiaddons-mc1710-1.12.5.17.jar) 
+	NEIAddons|ExNihilo{1.12.5.17} [NEI Addons: Ex Nihilo] (neiaddons-mc1710-1.12.5.17.jar) 
+	neiintegration{1.0.9} [NEI Integration] (NEIIntegration-MC1.7.10-1.0.9.jar) 
+	NEIPlugins{1.1.0.9-unofficial} [NEI Plugins Unofficial] (NEIPlugins-MC1.7.10-1.1.0.9-unofficial.jar) 
+	NetherOres{1.7.10R2.3.0} [Nether Ores] (NetherOres-[1.7.10]2.3.0-12.jar) 
+	neresources{0.1.0.95} [Not Enough Resources] (NotEnoughResources-1.7.10-0.1.0.95.jar) 
+	OCS{1.7.3} [OpenCCSensors] (openccsensors-1.7.3.jar) 
+	MapWriter{2.1.2} [MapWriter] (Opis-1.2.5_1.7.10.jar) 
+	Opis{1.2.5} [Opis] (Opis-1.2.5_1.7.10.jar) 
+	PowerConverters{1.7.10-3.0.4.47} [Power Converters] (PowerConverters-1.7.10-3.0.4.47.jar) 
+	ProjectE{1.7.10-PE1.4.6} [ProjectE] (ProjectE-1.7.10-PE1.4.6.jar) 
+	ProjRed|Core{4.5.16.77} [ProjectRed] (ProjectRed-1.7.10-4.5.16.77-Base.jar) 
+	ProjRed|Compatibility{4.5.16.77} [ProjectRed-Compatibility] (ProjectRed-1.7.10-4.5.16.77-Compat.jar) 
+	ProjRed|Integration{4.5.16.77} [ProjectRed-Integration] (ProjectRed-1.7.10-4.5.16.77-Integration.jar) 
+	ProjRed|Transmission{4.5.16.77} [ProjectRed-Transmission] (ProjectRed-1.7.10-4.5.16.77-Integration.jar) 
+	ProjRed|Illumination{4.5.16.77} [ProjectRed-Illumination] (ProjectRed-1.7.10-4.5.16.77-Lighting.jar) 
+	ProjRed|Expansion{4.5.16.77} [ProjectRed-Expansion] (ProjectRed-1.7.10-4.5.16.77-Mechanical_beta.jar) 
+	ProjRed|Transportation{4.5.16.77} [ProjectRed-Transportation] (ProjectRed-1.7.10-4.5.16.77-Mechanical_beta.jar) 
+	ProjRed|Exploration{4.5.16.77} [ProjectRed-Exploration] (ProjectRed-1.7.10-4.5.16.77-World.jar) 
+	qmunitylib{1.0} [QmunityLib] (QmunityLib-1.7.10-0.1.109-universal.jar) 
+	Railcraft{9.6.1.0} [Railcraft] (Railcraft_1.7.10-9.6.1.0.jar) 
+	Tubestuff{59.0.3} [Tubestuff] (tubestuff-59.0.3.jar) 
+	Waila{1.5.10} [Waila] (Waila-1.5.10_1.7.10.jar) 
+	WailaHarvestability{1.1.2} [Waila Harvestability] (WailaHarvestability-mc1.7.x-1.1.2.jar) 
+	weaponmod{v1.14.3} [Balkon's WeaponMod] (weaponmod-1.14.3.jar) 
+	WR-CBE|Core{1.4.1.9} [WR-CBE Core] (WR-CBE-1.7.10-1.4.1.9-universal.jar) 
+	WR-CBE|Addons{1.4.1.9} [WR-CBE Addons] (WR-CBE-1.7.10-1.4.1.9-universal.jar) 
+	WR-CBE|Logic{1.4.1.9} [WR-CBE Logic] (WR-CBE-1.7.10-1.4.1.9-universal.jar) 
+	bspkrsCore{6.15} [bspkrsCore] ([1.7.10]bspkrsCore-universal-6.15.jar) 
+	ForgeMicroblock{1.1.2.334} [Forge Microblocks] (ForgeMultipart-1.7.10-1.1.2.334-universal.jar) 
+	ForgeMultipart{1.1.2.334} [Forge Multipart] (ForgeMultipart-1.7.10-1.1.2.334-universal.jar) 
+	McMultipart{1.1.2.334} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.1.2.334-universal.jar) 
+	MrTJPCoreMod{1.0.6.13} [MrTJPCore] (MrTJPCore-1.0.6.13-universal.jar) 
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'cauldron,craftbukkit,mcpc,fml,forge'
+	Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,2 @@
+# Designate blacklisted items here, separated by commas:
+574,575,576

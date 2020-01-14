@@ -1,0 +1,195 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "textures:menu/tcrsplash.png",
+            "posX" : -250,
+            "posY" : 0,
+            "width" : 250,
+            "height" : 138,
+            "alignment" : "top_right"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "tooltip" : "Play alone",
+            "posX" : 10,
+            "posY" : -120,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "Multiplayer",
+            "tooltip" : "Play with others",
+            "posX" : 10,
+            "posY" : -100,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Mods",
+            "tooltip" : "View the mod list",
+            "posX" : 10,
+            "posY" : -60,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "tooltip" : "Fiddle with stuff",
+            "posX" : 10,
+            "posY" : -40,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "server":
+        {
+            "text" : "Official Server",
+            "tooltip" : "Play on the ECZ Classic Reborn Server",
+            "posX" : 10,
+            "posY" : -80,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip" : "ecz.org.uk:25564"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "tooltip" : "Close down the whole game! :(",
+            "posX" : 10,
+            "posY" : -20,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "tooltip" : "Language",
+            "posX" : 0,
+            "posY" : 0,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "top_left",
+            "texture" : "textures:menu/language.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+        
+        "refresh":
+        {
+            "text" : "",
+            "tooltip" : "Refresh",
+            "posX" : -20,
+            "posY" : 0,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "top_right",
+            "texture" : "textures:menu/refresh.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        }
+    },
+    
+    "texts":
+    {
+        "TCR Classic Reborn":
+        {
+            "text" : "TCR Classic Reborn v1.2.5",
+            "hoverText" : "Forge: #forgeversion#",
+            "posX" : -135,
+            "posY" : -20,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        },
+        
+        "info":
+        {
+            "text" : "Copyright Mojang AB. Do not Distribute",
+            "hoverText" : "                     MC: #mcversion# / Mods: #modsactive#",
+            "posX" : -200,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : -100,
+            "posY" : 150,
+            "color" : -758,
+            "alignment" : "top_right",
+            "file" : "custommainmenu:text/splash.txt"
+        },
+        
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : true,
+            "gradient" : false
+        }
+    }
+}
